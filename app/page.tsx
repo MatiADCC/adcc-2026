@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 
 export default function ADCCWorldChampionship2026Site() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const navItems = [
     { label: 'Home', href: '#home' },
     { label: 'Main Event', href: '#worlds' },
@@ -62,6 +64,17 @@ export default function ADCCWorldChampionship2026Site() {
     return () => clearInterval(interval);
   }, [eventDate]);
 
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMobileMenuOpen(false);
+    };
+
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [mobileMenuOpen]);
+
   const countdownItems = [
     { value: String(timeLeft.days).padStart(2, '0'), label: 'Days' },
     { value: String(timeLeft.hours).padStart(2, '0'), label: 'Hours' },
@@ -74,8 +87,34 @@ export default function ADCCWorldChampionship2026Site() {
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(245,158,11,0.18),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.08),transparent_20%),linear-gradient(180deg,#000000_0%,#050505_50%,#000000_100%)]" />
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-6 py-4 lg:flex-row lg:justify-between">
-          <div className="flex items-center justify-center">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:flex-row lg:justify-between">
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileMenuOpen}
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
+              className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/15 bg-white/5 transition hover:border-amber-400 hover:text-amber-400 lg:hidden"
+            >
+              <span className="relative block h-5 w-5">
+                <span
+                  className={`absolute left-0 top-0 h-0.5 w-5 bg-current transition-all duration-300 ${
+                    mobileMenuOpen ? 'top-2 rotate-45' : ''
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 top-2 h-0.5 w-5 bg-current transition-all duration-300 ${
+                    mobileMenuOpen ? 'opacity-0' : 'opacity-100'
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 top-4 h-0.5 w-5 bg-current transition-all duration-300 ${
+                    mobileMenuOpen ? 'top-2 -rotate-45' : ''
+                  }`}
+                />
+              </span>
+            </button>
+
             <img src="/adcc-logo.png" alt="ADCC logo" className="h-12 w-auto object-contain" />
           </div>
 
@@ -91,6 +130,23 @@ export default function ADCCWorldChampionship2026Site() {
             ))}
           </nav>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="border-t border-white/10 bg-black/95 lg:hidden">
+            <nav className="mx-auto flex max-w-7xl flex-col px-4 py-4 sm:px-6">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="rounded-xl px-4 py-3 text-center text-sm font-semibold uppercase tracking-[0.15em] text-white/80 transition hover:bg-white/5 hover:text-amber-400"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        )}
       </header>
 
       <main>
@@ -516,7 +572,7 @@ export default function ADCCWorldChampionship2026Site() {
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   Let’s build something big
                 </h2>
-                <p className="mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8 mx-auto">
+                <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
                   For partnerships, media opportunities, and event communication, use the contact
                   details below.
                 </p>
