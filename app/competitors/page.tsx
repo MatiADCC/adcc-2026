@@ -118,7 +118,9 @@ export default async function CompetitorsPage() {
 
       <main className="px-6 py-16">
         <div className="mx-auto max-w-7xl text-center">
-          <img src="/adcc-2026-logo.png" className="mx-auto mb-6 max-w-3xl" />
+          <img src="/adcc-2026-logo.png"
+  alt="ADCC 2026"
+  className="mx-auto mb-6 w-full max-w-[280px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[900px] object-contain" />
 
           <h1 className="text-4xl font-black uppercase md:text-5xl">
             Competitor's Lineup
