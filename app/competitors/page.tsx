@@ -113,6 +113,10 @@ export default async function CompetitorsPage() {
   const womenSpots = divisions.women.reduce((s, d) => s + d.spots, 0);
   const totalSpots = menSpots + womenSpots;
 
+  const menAvailable = menSpots - menCount;
+  const womenAvailable = womenSpots - womenCount;
+  const totalAvailable = totalSpots - (menCount + womenCount);
+
   const quickMenu = [
     { label: 'M -66', href: '#men-66' },
     { label: 'M -77', href: '#men-77' },
@@ -134,7 +138,7 @@ export default async function CompetitorsPage() {
             className="h-12 w-auto object-contain"
           />
 
-          <div className="hidden lg:flex gap-3">
+          <div className="hidden gap-3 lg:flex">
             {quickMenu.map((i) => (
               <a
                 key={i.href}
@@ -172,29 +176,23 @@ export default async function CompetitorsPage() {
 
             <div className="mt-10 grid w-full grid-cols-3 gap-4">
               <div className="rounded-xl border border-white/10 p-4 text-center">
-                <div className="text-3xl font-black">
-                  {menCount} / {menSpots}
-                </div>
+                <div className="text-3xl font-black">{menAvailable}</div>
                 <div className="whitespace-nowrap text-xs uppercase tracking-[0.08em] text-white/50">
-                  Men Announced
+                  Men Available Spots
                 </div>
               </div>
 
               <div className="rounded-xl border border-white/10 p-4 text-center">
-                <div className="text-3xl font-black">
-                  {womenCount} / {womenSpots}
-                </div>
+                <div className="text-3xl font-black">{womenAvailable}</div>
                 <div className="whitespace-nowrap text-xs uppercase tracking-[0.08em] text-white/50">
-                  Women Announced
+                  Women Available Spots
                 </div>
               </div>
 
               <div className="rounded-xl border border-amber-400/40 bg-amber-400/10 p-4 text-center">
-                <div className="text-3xl font-black text-amber-400">
-                  {menCount + womenCount} / {totalSpots}
-                </div>
+                <div className="text-3xl font-black text-amber-400">{totalAvailable}</div>
                 <div className="whitespace-nowrap text-xs uppercase tracking-[0.08em] text-white/50">
-                  Total Announced
+                  Total Available Spots
                 </div>
               </div>
             </div>
@@ -208,6 +206,7 @@ export default async function CompetitorsPage() {
 
               {data[group].map((div) => {
                 const rows = fillSpots(div.athletes, div.spots);
+                const availableSpots = div.spots - div.athletes.length;
 
                 return (
                   <section key={div.slug} id={div.slug} className="mb-16 scroll-mt-32">
@@ -217,7 +216,7 @@ export default async function CompetitorsPage() {
                       </h3>
 
                       <div className="text-sm text-white/40">
-                        {div.athletes.length}/{div.spots}
+                        Available spots: {availableSpots}
                       </div>
                     </div>
 
@@ -227,19 +226,13 @@ export default async function CompetitorsPage() {
                           key={i}
                           className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.02] px-5 py-4 transition hover:border-amber-400/40"
                         >
-                          <div className="flex items-center gap-6">
-                            <div className="w-10 text-xl font-bold text-white/30">
-                              {i + 1}
-                            </div>
-
-                            <div className="flex items-center gap-3 text-lg font-semibold md:text-xl">
-                              <span>{a.name}</span>
-                              {a.country && (
-                                <span className="font-medium text-white/40">
-                                  ({a.country})
-                                </span>
-                              )}
-                            </div>
+                          <div className="flex min-w-0 flex-1 items-center gap-3 text-left text-lg font-semibold md:text-xl">
+                            <span>{a.name}</span>
+                            {a.country && (
+                              <span className="font-medium text-white/40">
+                                ({a.country})
+                              </span>
+                            )}
                           </div>
 
                           {a.instagram ? (
@@ -247,12 +240,12 @@ export default async function CompetitorsPage() {
                               href={a.instagram}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-white/50 transition hover:text-amber-400"
+                              className="ml-4 shrink-0 text-white/50 transition hover:text-amber-400"
                             >
                               <InstagramIcon />
                             </a>
                           ) : (
-                            <span className="text-white/20">
+                            <span className="ml-4 shrink-0 text-white/20">
                               <InstagramIcon />
                             </span>
                           )}
