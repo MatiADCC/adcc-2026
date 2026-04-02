@@ -22,32 +22,38 @@ export default function ADCCWorldChampionship2026Site() {
   const sponsorCards = [
     {
       name: 'Sponsor 1',
+      logo: '',
       website: 'https://example.com',
       instagram: 'https://instagram.com/example',
     },
     {
       name: 'Sponsor 2',
+      logo: '',
       website: 'https://example.com',
       instagram: 'https://instagram.com/example',
     },
     {
       name: 'Sponsor 3',
+      logo: '',
       website: 'https://example.com',
       instagram: 'https://instagram.com/example',
     },
     {
       name: 'Sponsor 4',
+      logo: '',
       website: 'https://example.com',
       instagram: 'https://instagram.com/example',
     },
     {
       name: 'Sponsor 5',
+      logo: '',
       website: 'https://example.com',
       instagram: 'https://instagram.com/example',
     },
     {
       name: 'Sponsor 6',
-      website: 'https://instagram.com/example',
+      logo: '',
+      website: 'https://example.com',
       instagram: 'https://instagram.com/example',
     },
   ];
@@ -571,10 +577,18 @@ export default function ADCCWorldChampionship2026Site() {
                   key={sponsor.name}
                   className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl"
                 >
-                  <div className="flex min-h-[170px] items-center justify-center rounded-[1.5rem] border-2 border-dashed border-white/15 bg-white/[0.03] px-6">
-                    <span className="text-sm uppercase tracking-[0.25em] text-white/35">
-                      sponsor logo
-                    </span>
+                  <div className="flex min-h-[170px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-white/[0.03] px-6">
+                    {sponsor.logo ? (
+                      <img
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        className="max-h-20 w-auto max-w-full object-contain"
+                      />
+                    ) : (
+                      <span className="text-sm uppercase tracking-[0.25em] text-white/35">
+                        sponsor logo
+                      </span>
+                    )}
                   </div>
 
                   <div className="mt-6 flex items-center justify-center gap-4">
@@ -667,7 +681,7 @@ export default function ADCCWorldChampionship2026Site() {
             className="flex items-center gap-2 text-white/70 transition hover:text-amber-400"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.54 4 20 5.46 20 7.75v8.5c0 2.29-1.46 3.75-3.75 3.75h-8.5C5.46 20 4 18.54 4 16.25v-8.5C4 5.46 5.46 4 7.75 4zm8.75 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+              <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.54 4 20 5.46 20 7.75v8.5c0 2.29-1.46 3.75-3.75 3.75h-8.5C5.46 20 4 18.54 4 16.25v-8.5C4 5.46 5.46 4 7.75 4zm8.75 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
             </svg>
             Instagram
           </a>
