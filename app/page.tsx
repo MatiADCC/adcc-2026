@@ -22,39 +22,39 @@ export default function ADCCWorldChampionship2026Site() {
   const sponsorCards = [
     {
       name: 'Sponsor 1',
-      logo: '',
-      website: 'https://example.com',
-      instagram: 'https://instagram.com/example',
+      logo: '/sponsor-1.png',
+      website: 'https://example.com/sponsor-1',
+      instagram: 'https://instagram.com/sponsor1',
     },
     {
       name: 'Sponsor 2',
-      logo: '',
-      website: 'https://example.com',
-      instagram: 'https://instagram.com/example',
+      logo: '/sponsor-2.png',
+      website: 'https://example.com/sponsor-2',
+      instagram: 'https://instagram.com/sponsor2',
     },
     {
       name: 'Sponsor 3',
-      logo: '',
-      website: 'https://example.com',
-      instagram: 'https://instagram.com/example',
+      logo: '/sponsor-3.png',
+      website: 'https://example.com/sponsor-3',
+      instagram: 'https://instagram.com/sponsor3',
     },
     {
       name: 'Sponsor 4',
-      logo: '',
-      website: 'https://example.com',
-      instagram: 'https://instagram.com/example',
+      logo: '/sponsor-4.png',
+      website: 'https://example.com/sponsor-4',
+      instagram: 'https://instagram.com/sponsor4',
     },
     {
       name: 'Sponsor 5',
-      logo: '',
-      website: 'https://example.com',
-      instagram: 'https://instagram.com/example',
+      logo: '/sponsor-5.png',
+      website: 'https://example.com/sponsor-5',
+      instagram: 'https://instagram.com/sponsor5',
     },
     {
       name: 'Sponsor 6',
-      logo: '',
-      website: 'https://example.com',
-      instagram: 'https://instagram.com/example',
+      logo: '/sponsor-6.png',
+      website: 'https://example.com/sponsor-6',
+      instagram: 'https://instagram.com/sponsor6',
     },
   ];
 
@@ -573,18 +573,26 @@ export default function ADCCWorldChampionship2026Site() {
                   key={sponsor.name}
                   className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl"
                 >
+                  <div className="mb-4 text-lg font-black uppercase tracking-[0.12em] text-white">
+                    {sponsor.name}
+                  </div>
+
                   <div className="flex min-h-[170px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-white/[0.03] px-6">
-                    {sponsor.logo ? (
-                      <img
-                        src={sponsor.logo}
-                        alt={sponsor.name}
-                        className="max-h-20 w-auto max-w-full object-contain"
-                      />
-                    ) : (
-                      <span className="text-sm uppercase tracking-[0.25em] text-white/35">
-                        sponsor logo
-                      </span>
-                    )}
+                    <img
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      className="max-h-20 w-auto max-w-full object-contain"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        const next = e.currentTarget.nextElementSibling as HTMLElement | null;
+                        if (next) next.style.display = 'block';
+                      }}
+                    />
+                    <span
+                      className="hidden text-sm uppercase tracking-[0.25em] text-white/35"
+                    >
+                      sponsor logo
+                    </span>
                   </div>
 
                   <div className="mt-6 flex items-center justify-center gap-4">
