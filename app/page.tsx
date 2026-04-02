@@ -21,40 +21,40 @@ export default function ADCCWorldChampionship2026Site() {
 
   const sponsorCards = [
     {
-      name: 'Pitbull',
+      name: 'Royal Group',
       logo: '/sponsor-1.png',
-      website: 'https://pitbull.store',
-      instagram: 'https://instagram.com/pitbullsports',
+      website: 'https://adcombat.com',
+      instagram: 'https://www.instagram.com/adccworld/',
     },
     {
-      name: 'Sponsor 2',
+      name: 'FloGrappling',
       logo: '/sponsor-2.png',
-      website: 'https://example.com/sponsor-2',
-      instagram: 'https://instagram.com/sponsor2',
+      website: 'https://www.flograppling.com/',
+      instagram: 'https://www.instagram.com/flograppling/',
     },
     {
-      name: 'Sponsor 3',
+      name: 'Pitbull',
       logo: '/sponsor-3.png',
-      website: 'https://example.com/sponsor-3',
-      instagram: 'https://instagram.com/sponsor3',
+      website: 'https://pitbull.store',
+      instagram: 'https://www.instagram.com/pitbullsports/',
     },
     {
       name: 'Sponsor 4',
       logo: '/sponsor-4.png',
       website: 'https://example.com/sponsor-4',
-      instagram: 'https://instagram.com/sponsor4',
+      instagram: 'https://www.instagram.com/sponsor4/',
     },
     {
       name: 'Sponsor 5',
       logo: '/sponsor-5.png',
       website: 'https://example.com/sponsor-5',
-      instagram: 'https://instagram.com/sponsor5',
+      instagram: 'https://www.instagram.com/sponsor5/',
     },
     {
       name: 'Sponsor 6',
       logo: '/sponsor-6.png',
       website: 'https://example.com/sponsor-6',
-      instagram: 'https://instagram.com/sponsor6',
+      instagram: 'https://www.instagram.com/sponsor6/',
     },
   ];
 
@@ -563,7 +563,7 @@ export default function ADCCWorldChampionship2026Site() {
                 Sponsors
               </div>
               <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
-                Our Partners
+                PARTNERS & SPONSORS
               </h2>
             </div>
 
@@ -588,9 +588,7 @@ export default function ADCCWorldChampionship2026Site() {
                         if (next) next.style.display = 'block';
                       }}
                     />
-                    <span
-                      className="hidden text-sm uppercase tracking-[0.25em] text-white/35"
-                    >
+                    <span className="hidden text-sm uppercase tracking-[0.25em] text-white/35">
                       sponsor logo
                     </span>
                   </div>
