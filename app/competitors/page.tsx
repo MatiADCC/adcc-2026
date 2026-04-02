@@ -57,6 +57,26 @@ function fillSpots(athletes: Athlete[], spots: number) {
   return arr;
 }
 
+function normalizeInstagramUrl(value: string) {
+  const raw = value.trim();
+
+  if (!raw) return '';
+
+  if (raw.startsWith('http://') || raw.startsWith('https://')) {
+    return raw;
+  }
+
+  if (raw.startsWith('@')) {
+    return `https://www.instagram.com/${raw.slice(1)}/`;
+  }
+
+  if (raw.includes('instagram.com/')) {
+    return `https://${raw.replace(/^\/+/, '')}`;
+  }
+
+  return `https://www.instagram.com/${raw.replace(/^@/, '').replace(/^\/+|\/+$/g, '')}/`;
+}
+
 async function loadData() {
   const filePath = path.join(process.cwd(), 'app/data/competitors.csv');
 
@@ -105,7 +125,7 @@ export default async function CompetitorsPage() {
     <div className="min-h-screen bg-black text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <img src="/adcc-logo.png" className="h-12" />
+          <img src="/adcc-logo.png" className="h-12" alt="ADCC logo" />
 
           <Link
             href="/"
@@ -118,15 +138,16 @@ export default async function CompetitorsPage() {
 
       <main className="px-6 py-16">
         <div className="mx-auto max-w-7xl text-center">
-          <img src="/adcc-2026-logo.png"
-  alt="ADCC 2026"
-  className="mx-auto mb-6 w-full max-w-[280px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[900px] object-contain" />
+          <img
+            src="/adcc-2026-logo.png"
+            alt="ADCC 2026"
+            className="mx-auto mb-6 w-full max-w-[280px] object-contain sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[900px]"
+          />
 
           <h1 className="text-4xl font-black uppercase md:text-5xl">
-            Competitor's Lineup
+            Competitor&apos;s Lineup
           </h1>
 
-          {/* 🔥 STATY */}
           <div className="mt-10 grid grid-cols-3 gap-4">
             <div className="rounded-xl border border-white/10 p-4">
               <div className="text-3xl font-black">80</div>
@@ -158,27 +179,37 @@ export default async function CompetitorsPage() {
                     </h3>
 
                     <div className="mx-auto grid max-w-4xl gap-3">
-                      {rows.map((a, i) => (
-                        <div
-                          key={i}
-                          className="flex items-center justify-between rounded-xl border border-white/10 px-5 py-4"
-                        >
-                          <div className="text-left text-lg font-semibold">
-                            {a.name}
-                            {a.country && (
-                              <span className="ml-2 text-white/40">
-                                ({a.country})
-                              </span>
+                      {rows.map((a, i) => {
+                        const instagramUrl = normalizeInstagramUrl(a.instagram);
+
+                        return (
+                          <div
+                            key={i}
+                            className="flex items-center justify-between rounded-xl border border-white/10 px-5 py-4"
+                          >
+                            <div className="text-left text-lg font-semibold">
+                              {a.name}
+                              {a.country && (
+                                <span className="ml-2 text-white/40">
+                                  ({a.country})
+                                </span>
+                              )}
+                            </div>
+
+                            {instagramUrl && (
+                              <a
+                                href={instagramUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`${a.name} Instagram`}
+                                className="text-white/70 transition hover:text-amber-400"
+                              >
+                                <InstagramIcon />
+                              </a>
                             )}
                           </div>
-
-                          {a.instagram && (
-                            <a href={a.instagram} target="_blank">
-                              <InstagramIcon />
-                            </a>
-                          )}
-                        </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   </section>
                 );
