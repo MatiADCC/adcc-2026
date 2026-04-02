@@ -10,26 +10,45 @@ export default function ADCCWorldChampionship2026Site() {
     { label: 'Home', href: '#home' },
     { label: 'Main Event', href: '#worlds' },
     { label: 'Competitors', href: '/competitors' },
-    { label: 'Next Generation', href: '#amateur' },
+    { label: 'Side Event', href: '#amateur' },
     { label: 'Host City', href: '#city' },
     { label: 'Venue', href: '#venue' },
     { label: 'Accessibility', href: '#airport' },
     { label: 'Accommodation', href: '#hotels' },
     { label: 'Tickets', href: '#tickets' },
+    { label: 'Sponsors', href: '#sponsors' },
   ];
 
-  const sponsorTiers = [
+  const sponsorCards = [
     {
-      name: 'Official Partner',
-      points: ['Headline event exposure', 'Premium on-site branding', 'Dedicated digital visibility'],
+      name: 'Sponsor 1',
+      website: 'https://example.com',
+      instagram: 'https://instagram.com/example',
     },
     {
-      name: 'Event Sponsor',
-      points: ['Logo across key assets', 'Audience engagement activations', 'Hospitality and networking options'],
+      name: 'Sponsor 2',
+      website: 'https://example.com',
+      instagram: 'https://instagram.com/example',
     },
     {
-      name: 'Supporting Sponsor',
-      points: ['Brand placement in selected areas', 'Community reach within grappling', 'Flexible partnership format'],
+      name: 'Sponsor 3',
+      website: 'https://example.com',
+      instagram: 'https://instagram.com/example',
+    },
+    {
+      name: 'Sponsor 4',
+      website: 'https://example.com',
+      instagram: 'https://instagram.com/example',
+    },
+    {
+      name: 'Sponsor 5',
+      website: 'https://example.com',
+      instagram: 'https://instagram.com/example',
+    },
+    {
+      name: 'Sponsor 6',
+      website: 'https://instagram.com/example',
+      instagram: 'https://instagram.com/example',
     },
   ];
 
@@ -279,23 +298,25 @@ export default function ADCCWorldChampionship2026Site() {
                   ADCC Amateur World Championship
                 </h2>
                 <p className="mt-6 text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
-                  The amateur championship expands the experience far beyond one event. It brings
-                  ambitious athletes from around the world into the ADCC ecosystem and creates an
-                  even bigger festival of grappling in the host city.
+                  The amateur championship is an open tournament for athletes from around the world,
+                  giving anyone the opportunity to step onto the biggest stage in grappling.
+                  Competitors will have the unique chance to fight in the same arena as the ADCC
+                  World Championships, becoming part of the global ADCC experience and competing
+                  where the sport’s elite perform.
                 </p>
                 <p className="mt-4 text-base leading-7 text-white/65 sm:leading-8">
-                  More competitors, more teams, more families, more community, and more energy
-                  around the biggest brand in submission grappling.
+                  A truly global gathering — uniting athletes, teams, and supporters to create an
+                  electric atmosphere around the world’s premier grappling event.
                 </p>
               </div>
 
               <div className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl">
-                <h3 className="text-2xl font-black uppercase">Why it matters</h3>
+                <h3 className="text-2xl font-black uppercase">Why you should compete</h3>
                 <div className="mt-6 space-y-4 text-sm leading-7 text-white/70">
-                  <div>• Builds a full championship-week atmosphere around ADCC.</div>
-                  <div>• Expands international reach across athletes and teams.</div>
-                  <div>• Strengthens the event footprint in Kraków.</div>
-                  <div>• Creates long-term loyalty among future stars of the sport.</div>
+                  <div>• Experience the full ADCC championship week.</div>
+                  <div>• Face top athletes from around the world.</div>
+                  <div>• Compete in the same arena as the ADCC World Championships.</div>
+                  <div>• Start building your name on the biggest stage in grappling.</div>
                 </div>
               </div>
             </div>
@@ -329,7 +350,7 @@ export default function ADCCWorldChampionship2026Site() {
                 ],
                 [
                   'Big-City Energy',
-                  'A strong metropolitan area with the scale, atmosphere, and audience potential needed for a global championship weekend.',
+                  'Kraków is the perfect place to spend an unforgettable weekend — combining world-class competition with a vibrant city full of culture, great food, and unique atmosphere.',
                 ],
                 [
                   'Perfect Event Backdrop',
@@ -421,17 +442,21 @@ export default function ADCCWorldChampionship2026Site() {
                 <p className="mt-6 text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
                   Fast international access is one of Kraków’s biggest advantages. The airport
                   makes travel easy for athletes, coaches, media, sponsors, and fans coming from
-                  across Europe and beyond.
+                  across Europe and beyond, handling over 13 million passengers annually.
                 </p>
                 <p className="mt-4 text-base leading-7 text-white/65 sm:leading-8">
-                  The short transfer time between the airport and the city center helps turn the
-                  entire championship trip into a smooth, premium event experience.
+                  The short transfer time between the airport and the city center — around 25
+                  minutes to reach the heart of Kraków — helps turn the entire championship trip
+                  into a smooth, premium event experience.
                 </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
-                  ['International Reach', 'Strong network of connections for incoming visitors.'],
+                  [
+                    'International Reach',
+                    'Direct connections to over 170 airports worldwide, making travel to Kraków easy and affordable for visitors from across the globe.',
+                  ],
                   ['Quick City Access', 'Convenient route from landing to hotel, arena, and city center.'],
                   ['Travel-Friendly', 'Ideal for spectators, teams, and global event partners.'],
                   ['Event Advantage', 'Easy logistics increase the appeal of attending live.'],
@@ -532,26 +557,71 @@ export default function ADCCWorldChampionship2026Site() {
                 Sponsors
               </div>
               <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
-                Align your brand with a global combat sports property
+                Our Partners
               </h2>
               <p className="mt-6 text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
-                ADCC offers access to a deeply engaged international audience through premium event
-                branding, digital exposure, social media integration, and direct association with
-                the biggest stage in the sport.
+                Space prepared for sponsor logos and direct links to official websites and
+                Instagram profiles.
               </p>
             </div>
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
-              {sponsorTiers.map((tier) => (
+            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {sponsorCards.map((sponsor) => (
                 <div
-                  key={tier.name}
-                  className="rounded-[2rem] border border-white/10 bg-black/60 p-7 text-center backdrop-blur-xl"
+                  key={sponsor.name}
+                  className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl"
                 >
-                  <h3 className="text-2xl font-black uppercase">{tier.name}</h3>
-                  <div className="mt-5 space-y-3 text-sm leading-7 text-white/70">
-                    {tier.points.map((point) => (
-                      <div key={point}>• {point}</div>
-                    ))}
+                  <div className="flex min-h-[170px] items-center justify-center rounded-[1.5rem] border-2 border-dashed border-white/15 bg-white/[0.03] px-6">
+                    <span className="text-sm uppercase tracking-[0.25em] text-white/35">
+                      sponsor logo
+                    </span>
+                  </div>
+
+                  <div className="mt-6 flex items-center justify-center gap-4">
+                    <a
+                      href={sponsor.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${sponsor.name} website`}
+                      className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/75 transition hover:border-amber-400 hover:text-amber-400"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 21a9 9 0 100-18 9 9 0 000 18z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 010 18M12 3a15 15 0 000 18"
+                        />
+                      </svg>
+                    </a>
+
+                    <a
+                      href={sponsor.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${sponsor.name} Instagram`}
+                      className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white/75 transition hover:border-amber-400 hover:text-amber-400"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.54 4 20 5.46 20 7.75v8.5c0 2.29-1.46 3.75-3.75 3.75h-8.5C5.46 20 4 18.54 4 16.25v-8.5C4 5.46 5.46 4 7.75 4zm8.75 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               ))}
@@ -597,7 +667,7 @@ export default function ADCCWorldChampionship2026Site() {
             className="flex items-center gap-2 text-white/70 transition hover:text-amber-400"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.54 4 20 5.46 20 7.75v8.5c0 2.29-1.46 3.75-3.75 3.75h-8.5C5.46 20 4 18.54 4 16.25v-8.5C4 5.46 5.46 4 7.75 4zm8.75 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
+              <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.54 4 20 5.46 20 7.75v8.5c0 2.29-1.46 3.75-3.75 3.75h-8.5C5.46 20 4 18.54 4 16.25v-8.5C4 5.46 5.46 4 7.75 4zm8.75 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z" />
             </svg>
             Instagram
           </a>
