@@ -21,10 +21,10 @@ export default function ADCCWorldChampionship2026Site() {
 
   const sponsorCards = [
     {
-      name: 'Sponsor 1',
+      name: 'Pitbull',
       logo: '/sponsor-1.png',
-      website: 'https://example.com/sponsor-1',
-      instagram: 'https://instagram.com/sponsor1',
+      website: 'https://pitbull.store',
+      instagram: 'https://instagram.com/pitbullsports',
     },
     {
       name: 'Sponsor 2',
