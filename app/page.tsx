@@ -275,9 +275,6 @@ export default function ADCCWorldChampionship2026Site() {
           <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="text-center">
-                <div className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-400">
-             
-                </div>
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   ADCC Amateur World Championship
                 </h2>
