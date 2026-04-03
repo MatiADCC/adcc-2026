@@ -314,6 +314,17 @@ export default function ADCCWorldChampionship2026Site() {
                   A truly global gathering — uniting athletes, teams, and supporters to create an
                   electric atmosphere around the world’s premier grappling event.
                 </p>
+
+                <div className="mt-8 flex justify-center">
+                  <a
+                    href="https://smoothcomp.com/en/event/29650"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-2xl bg-amber-400 px-8 py-4 text-sm font-bold uppercase tracking-[0.25em] text-black transition duration-300 hover:scale-[1.05]"
+                  >
+                    Register
+                  </a>
+                </div>
               </div>
 
               <div className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl">
