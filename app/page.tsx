@@ -190,7 +190,10 @@ export default function ADCCWorldChampionship2026Site() {
                 The world’s most prestigious grappling event returns in 2026
               </h1>
 
-              <p className="mt-6 max-w-2xl text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-xl">
+              <p
+                className="mt-6 max-w-2xl text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-xl"
+                style={{ textAlignLast: 'center' }}
+              >
                 ADCC World Championship 2026 brings the sport’s biggest names, the strongest
                 international attention, and a championship atmosphere built for a massive live
                 audience.
@@ -262,7 +265,10 @@ export default function ADCCWorldChampionship2026Site() {
               <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                 ADCC World Championship 2026
               </h2>
-              <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+              <p
+                className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                style={{ textAlignLast: 'center' }}
+              >
                 This is the highest stage in submission grappling. The best athletes in the world,
                 one championship platform, and a weekend designed to feel bigger, louder, and more
                 legendary than ever.
@@ -289,7 +295,12 @@ export default function ADCCWorldChampionship2026Site() {
                   className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-7 text-center backdrop-blur-sm"
                 >
                   <h3 className="text-2xl font-black uppercase">{title}</h3>
-                  <p className="mt-4 text-justify text-sm leading-7 text-white/70">{text}</p>
+                  <p
+                    className="mt-4 text-justify text-sm leading-7 text-white/70"
+                    style={{ textAlignLast: 'center' }}
+                  >
+                    {text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -303,14 +314,20 @@ export default function ADCCWorldChampionship2026Site() {
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   ADCC Amateur World Championship
                 </h2>
-                <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+                <p
+                  className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   The amateur championship is an open tournament for athletes from around the world,
                   giving anyone the opportunity to step onto the biggest stage in grappling.
                   Competitors will have the unique chance to fight in the same arena as the ADCC
                   World Championships, becoming part of the global ADCC experience and competing
                   where the sport’s elite perform.
                 </p>
-                <p className="mt-4 text-justify text-base leading-7 text-white/65 sm:leading-8">
+                <p
+                  className="mt-4 text-justify text-base leading-7 text-white/65 sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   A truly global gathering — uniting athletes, teams, and supporters to create an
                   electric atmosphere around the world’s premier grappling event.
                 </p>
@@ -349,7 +366,10 @@ export default function ADCCWorldChampionship2026Site() {
               <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                 Kraków is ready for the world
               </h2>
-              <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+              <p
+                className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                style={{ textAlignLast: 'center' }}
+              >
                 Kraków is one of the most recognizable cities in Poland and one of the country’s
                 strongest destinations for international events, tourism, and premium live
                 experiences. The wider Kraków metropolitan area is home to over 1 million people,
@@ -379,7 +399,12 @@ export default function ADCCWorldChampionship2026Site() {
                   className="rounded-[2rem] border border-white/10 bg-black/60 p-7 text-center backdrop-blur-xl"
                 >
                   <h3 className="text-2xl font-black uppercase">{title}</h3>
-                  <p className="mt-4 text-justify text-sm leading-7 text-white/70">{text}</p>
+                  <p
+                    className="mt-4 text-justify text-sm leading-7 text-white/70"
+                    style={{ textAlignLast: 'center' }}
+                  >
+                    {text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -396,7 +421,10 @@ export default function ADCCWorldChampionship2026Site() {
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   TAURON Arena Kraków
                 </h2>
-                <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+                <p
+                  className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   One of the most impressive indoor venues in Poland and a perfect fit for a modern
                   combat sports spectacle. TAURON Arena gives ADCC the scale, atmosphere, and
                   visual impact required for a true world championship presentation.
@@ -439,7 +467,12 @@ export default function ADCCWorldChampionship2026Site() {
                   className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-7 text-center backdrop-blur-sm"
                 >
                   <h3 className="text-2xl font-black uppercase">{title}</h3>
-                  <p className="mt-4 text-justify text-sm leading-7 text-white/70">{text}</p>
+                  <p
+                    className="mt-4 text-justify text-sm leading-7 text-white/70"
+                    style={{ textAlignLast: 'center' }}
+                  >
+                    {text}
+                  </p>
                 </div>
               ))}
             </div>
@@ -456,12 +489,18 @@ export default function ADCCWorldChampionship2026Site() {
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   Kraków Airport connects the event to the world
                 </h2>
-                <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+                <p
+                  className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   Fast international access is one of Kraków’s biggest advantages. The airport
                   makes travel easy for athletes, coaches, media, sponsors, and fans coming from
                   across Europe and beyond, handling over 13 million passengers annually.
                 </p>
-                <p className="mt-4 text-justify text-base leading-7 text-white/65 sm:leading-8">
+                <p
+                  className="mt-4 text-justify text-base leading-7 text-white/65 sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   The short transfer time between the airport and the city center — around 25
                   minutes to reach the heart of Kraków — helps turn the entire championship trip
                   into a smooth, premium event experience.
@@ -483,7 +522,12 @@ export default function ADCCWorldChampionship2026Site() {
                     className="rounded-[2rem] border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm"
                   >
                     <div className="text-lg font-black uppercase">{title}</div>
-                    <p className="mt-3 text-justify text-sm leading-7 text-white/65">{text}</p>
+                    <p
+                      className="mt-3 text-justify text-sm leading-7 text-white/65"
+                      style={{ textAlignLast: 'center' }}
+                    >
+                      {text}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -501,11 +545,17 @@ export default function ADCCWorldChampionship2026Site() {
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   Strong hotel base for athletes and fans
                 </h2>
-                <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+                <p
+                  className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   Kraków offers a wide accommodation range for every type of visitor — from premium
                   hotels to practical options for teams, families, and international supporters.
                 </p>
-                <p className="mt-4 text-justify text-base leading-7 text-white/65 sm:leading-8">
+                <p
+                  className="mt-4 text-justify text-base leading-7 text-white/65 sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   This makes the city ideal for a multi-day championship experience with thousands
                   of incoming guests.
                 </p>
@@ -523,7 +573,12 @@ export default function ADCCWorldChampionship2026Site() {
                     className="rounded-[2rem] border border-white/10 bg-black/60 p-6 text-center backdrop-blur-xl"
                   >
                     <div className="text-lg font-black uppercase">{title}</div>
-                    <p className="mt-3 text-justify text-sm leading-7 text-white/65">{text}</p>
+                    <p
+                      className="mt-3 text-justify text-sm leading-7 text-white/65"
+                      style={{ textAlignLast: 'center' }}
+                    >
+                      {text}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -540,7 +595,10 @@ export default function ADCCWorldChampionship2026Site() {
               <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                 Be there when history is made
               </h2>
-              <p className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+              <p
+                className="mt-6 text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                style={{ textAlignLast: 'center' }}
+              >
                 Secure your place for one of the biggest weekends in grappling. Premium seats,
                 world-level action, and a live arena experience built for true fans of the sport.
               </p>
@@ -666,7 +724,10 @@ export default function ADCCWorldChampionship2026Site() {
                 <h2 className="mt-4 text-3xl font-black uppercase leading-tight sm:text-4xl lg:text-5xl">
                   Let’s build something big
                 </h2>
-                <p className="mx-auto mt-6 max-w-2xl text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
+                <p
+                  className="mx-auto mt-6 max-w-2xl text-justify text-base leading-7 text-white/75 sm:text-lg sm:leading-8"
+                  style={{ textAlignLast: 'center' }}
+                >
                   For partnerships, media opportunities, and event communication, use the contact
                   details below.
                 </p>
