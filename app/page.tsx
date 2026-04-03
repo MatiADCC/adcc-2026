@@ -224,7 +224,7 @@ export default function ADCCWorldChampionship2026Site() {
                   {countdownItems.map((item) => (
                     <div
                       key={item.label}
-                      className="rounded-2xl border border-white/10 bg-black/50 p-4 text-center"
+                      className="rounded-2xl border border-white/20 bg-zinc-900/95 p-4 text-center shadow-lg shadow-black/40"
                     >
                       <div className="text-3xl font-black uppercase text-white">{item.value}</div>
                       <div className="mt-2 text-xs uppercase tracking-[0.25em] text-white/45">
@@ -292,7 +292,7 @@ export default function ADCCWorldChampionship2026Site() {
               ].map(([title, text]) => (
                 <div
                   key={title}
-                  className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-7 text-center backdrop-blur-sm"
+                  className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-7 text-center shadow-lg shadow-black/40 backdrop-blur-sm"
                 >
                   <h3 className="text-2xl font-black uppercase">{title}</h3>
                   <p
@@ -344,7 +344,7 @@ export default function ADCCWorldChampionship2026Site() {
                 </div>
               </div>
 
-              <div className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl">
+              <div className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-8 text-center shadow-lg shadow-black/40 backdrop-blur-xl">
                 <h3 className="text-2xl font-black uppercase">Why you should compete</h3>
                 <div className="mt-6 space-y-4 text-left text-sm leading-7 text-white/70">
                   <div>• Experience the full ADCC championship week.</div>
@@ -396,7 +396,7 @@ export default function ADCCWorldChampionship2026Site() {
               ].map(([title, text]) => (
                 <div
                   key={title}
-                  className="rounded-[2rem] border border-white/10 bg-black/60 p-7 text-center backdrop-blur-xl"
+                  className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-7 text-center shadow-lg shadow-black/40 backdrop-blur-xl"
                 >
                   <h3 className="text-2xl font-black uppercase">{title}</h3>
                   <p
@@ -464,7 +464,7 @@ export default function ADCCWorldChampionship2026Site() {
               ].map(([title, text]) => (
                 <div
                   key={title}
-                  className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/8 to-white/[0.03] p-7 text-center backdrop-blur-sm"
+                  className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-7 text-center shadow-lg shadow-black/40 backdrop-blur-sm"
                 >
                   <h3 className="text-2xl font-black uppercase">{title}</h3>
                   <p
@@ -519,7 +519,7 @@ export default function ADCCWorldChampionship2026Site() {
                 ].map(([title, text]) => (
                   <div
                     key={title}
-                    className="rounded-[2rem] border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm"
+                    className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-6 text-center shadow-lg shadow-black/40 backdrop-blur-sm"
                   >
                     <div className="text-lg font-black uppercase">{title}</div>
                     <p
@@ -570,7 +570,7 @@ export default function ADCCWorldChampionship2026Site() {
                 ].map(([title, text]) => (
                   <div
                     key={title}
-                    className="rounded-[2rem] border border-white/10 bg-black/60 p-6 text-center backdrop-blur-xl"
+                    className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-6 text-center shadow-lg shadow-black/40 backdrop-blur-xl"
                   >
                     <div className="text-lg font-black uppercase">{title}</div>
                     <p
@@ -604,7 +604,7 @@ export default function ADCCWorldChampionship2026Site() {
               </p>
             </div>
 
-            <div className="mx-auto mt-10 max-w-4xl rounded-[2rem] border border-amber-400/30 bg-gradient-to-r from-amber-400/15 to-white/[0.04] p-8 text-center shadow-2xl shadow-black/30">
+            <div className="mx-auto mt-10 max-w-4xl rounded-[2rem] border border-amber-400/35 bg-zinc-900/95 p-8 text-center shadow-2xl shadow-black/40">
               <div className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">
                 Official Ticket Info
               </div>
@@ -640,13 +640,13 @@ export default function ADCCWorldChampionship2026Site() {
               {sponsorCards.map((sponsor) => (
                 <div
                   key={sponsor.name}
-                  className="rounded-[2rem] border border-white/10 bg-black/60 p-8 text-center backdrop-blur-xl"
+                  className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-8 text-center shadow-lg shadow-black/40 backdrop-blur-xl"
                 >
                   <div className="mb-4 text-lg font-black uppercase tracking-[0.12em] text-white">
                     {sponsor.name}
                   </div>
 
-                  <div className="flex min-h-[170px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-white/[0.03] px-6">
+                  <div className="flex min-h-[170px] items-center justify-center rounded-[1.5rem] border border-white/15 bg-black/50 px-6">
                     <img
                       src={sponsor.logo}
                       alt={sponsor.name}
@@ -733,7 +733,7 @@ export default function ADCCWorldChampionship2026Site() {
                 </p>
               </div>
 
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl">
+              <div className="rounded-[2rem] border border-white/20 bg-zinc-900/95 p-8 text-center shadow-lg shadow-black/40 backdrop-blur-xl">
                 <div className="space-y-5 text-sm leading-7 text-white/75">
                   <div>
                     <div className="text-xs uppercase tracking-[0.2em] text-white/45">Email</div>
