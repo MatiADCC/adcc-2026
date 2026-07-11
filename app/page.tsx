@@ -39,10 +39,10 @@ export default function ADCCWorldChampionship2026Site() {
       instagram: 'https://www.instagram.com/pitbullsports/',
     },
     {
-      name: 'Sponsor 4',
+      name: '971 MMA',
       logo: '/sponsor-4.png',
-      website: 'https://example.com/sponsor-4',
-      instagram: 'https://www.instagram.com/sponsor4/',
+      website: 'https://971mma.com',
+      instagram: 'https://www.instagram.com/971mma?igsh=MWdpdnBpMHpkaHV4eg%3D%3D&utm_source=qr',
     },
     {
       name: 'Sponsor 5',
