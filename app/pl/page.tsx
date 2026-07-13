@@ -40,7 +40,7 @@ export default function ADCCWorldChampionship2026Site() {
     },
     {
       name: '971 MMA',
-      logo: '/971-mma-logo.png',
+      logo: '/sponsor-4.png',
       website: 'https://971mma.com',
       instagram: 'https://www.instagram.com/971mma/',
     },
